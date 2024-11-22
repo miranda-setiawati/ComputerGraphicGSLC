@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="glsccompgraph.UploadController">
+    <children>
+        <VBox spacing="20" alignment="CENTER" layoutX="20.0" layoutY="20.0">
+           
+            <Button text="Upload and Convert" onAction="#uploadImage"/>
+            <ChoiceBox fx:id="operationChoice" />
+            <Button fx:id="processButton" text="Process Image" />
+            
+       
+            <HBox spacing="20" alignment="CENTER">
+                <VBox spacing="10" alignment="CENTER">
+                    <Label text="Original Image"/>
+                    <ImageView fx:id="imageViewOriginal" fitWidth="200" fitHeight="150"/>
+                </VBox>
+                <VBox spacing="10" alignment="CENTER">
+                    <Label text="Transformed Image"/>
+                    <ImageView fx:id="imageViewTransformed" fitWidth="200" fitHeight="150"/>
+                </VBox>
+            </HBox>
+
+          
+            
+        </VBox>
+    </children>
+</AnchorPane>
